@@ -1,0 +1,6 @@
+{
+  "name": "Nusantara Wayang",
+  "description": "Website company profile, katalog produk kerajinan wayang, dan CMS admin dashboard bernuansa Modern Javanese Heritage dengan integrasi WhatsApp inquiry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

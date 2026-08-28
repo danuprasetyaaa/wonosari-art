@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, .font-serif-jawa {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Subtle Javanese decorative patterns and accents */
+.bg-jawa-subtle {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(#D8C7B5 0.75px, transparent 0.75px), radial-gradient(#D8C7B5 0.75px, #FAF7F2 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.bg-batik-motif {
+  background-color: #F5EFEB;
+  background-image: linear-gradient(135deg, rgba(194, 107, 56, 0.04) 25%, transparent 25%),
+                    linear-gradient(225deg, rgba(194, 107, 56, 0.04) 25%, transparent 25%),
+                    linear-gradient(45deg, rgba(194, 107, 56, 0.04) 25%, transparent 25%),
+                    linear-gradient(315deg, rgba(194, 107, 56, 0.04) 25%, #F5EFEB 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+/* Custom Gold & Terracotta Gradient borders */
+.border-gold-subtle {
+  border-color: rgba(205, 150, 75, 0.25);
+}
+
+.shadow-jawa-soft {
+  box-shadow: 0 10px 30px -10px rgba(78, 52, 34, 0.08);
+}
+
+.shadow-jawa-hover {
+  box-shadow: 0 20px 35px -10px rgba(78, 52, 34, 0.14);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C3B3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C26B38;
+}
